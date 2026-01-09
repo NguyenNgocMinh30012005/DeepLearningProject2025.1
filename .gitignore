@@ -53,3 +53,10 @@ DataDream/
 
 # Backup
 .venv-backups/
+
+# Sensitive files
+YOUR_SSH_PUBLIC_KEY.txt
+*.pem
+*.key
+id_rsa*
+id_ed25519*
