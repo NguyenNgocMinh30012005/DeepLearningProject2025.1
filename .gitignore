@@ -1,0 +1,55 @@
+# Data & Models (Too large for GitHub)
+generated_images/
+LoRA_W/
+dataset_original/
+dataset_prepared/
+experiments_results/
+fewshot_data/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+
+# PyTorch
+*.pth
+*.safetensors
+
+# Logs (keep structure but not content)
+logs/*.log
+logs/*.txt
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Diffusers & HuggingFace cache
+.hf_home/
+diffusers_repo/
+
+# Archive
+archive_old_files/
+
+# DataDream original
+DataDream/
+
+# Backup
+.venv-backups/
