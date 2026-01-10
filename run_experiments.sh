@@ -120,21 +120,4 @@ python3 /workspace/train_classifier.py \
     --scheduler cosine \
     --num_workers $NUM_WORKERS
 
-# ============================================
-# Visualize Results
-# ============================================
-echo ""
-echo "========================================"
-echo "STEP 3: Visualizing Results"
-echo "========================================"
 
-python3 /workspace/visualize_results.py \
-    --results_dir "$RESULTS_BASE" \
-    --output_dir "$RESULTS_BASE/visualizations"
-
-echo ""
-echo "========================================"
-echo "✓ ALL EXPERIMENTS COMPLETE (NO PRETRAIN)"
-echo "========================================"
-echo "Results saved to: $RESULTS_BASE"
-echo "Visualizations: $RESULTS_BASE/visualizations"

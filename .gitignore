@@ -1,34 +1,33 @@
-# Data & Models (Too large for GitHub)
-generated_images/
-LoRA_W/
-dataset_original/
-dataset_prepared/
-experiments_results/
-fewshot_data/
-
-# Python cache
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
 *.so
 .Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+pip-wheel-metadata/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
 
-# Virtual environments
-.venv/
+# Virtual Environment
 venv/
 ENV/
 env/
-
-# Jupyter Notebook
-.ipynb_checkpoints
-
-# PyTorch
-*.pth
-*.safetensors
-
-# Logs (keep structure but not content)
-logs/*.log
-logs/*.txt
+.venv
 
 # IDE
 .vscode/
@@ -36,27 +35,110 @@ logs/*.txt
 *.swp
 *.swo
 *~
-
-# OS
 .DS_Store
-Thumbs.db
 
-# Diffusers & HuggingFace cache
-.hf_home/
-diffusers_repo/
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb
 
-# Archive
+# PyTorch
+*.pth
+*.pt
+*.ckpt
+*.safetensors
+*.h5
+
+# Logs
+*.log
+logs/
+*.log.*
+training_log*.txt
+
+# Data & Models (large files)
+*.png
+*.jpg
+*.jpeg
+*.JPG
+*.JPEG
+*.gif
+*.bmp
+*.tiff
+*.tif
+!sample_images/**/*.png
+!sample_images/**/*.jpg
+
+# Generated images (too large for git)
+generated_images/
+LoRA_W/
+LoRA_weights/
+
+# Dataset (original - too large)
+dataset_original/
+dataset_prepared/
+
+# Experiments results (too large)
+experiments_results/
 archive_old_files/
+results_*/
 
-# DataDream original
-DataDream/
+# Visualizations (large PNG files)
+visualizations_*/
+final_visualizations/
+*.png
+*.jpg
+*.jpeg
+!README*.md
+!LICENSE
+!requirements.txt
+!.gitignore
 
-# Backup
-.venv-backups/
+# Temporary files
+*.tmp
+*.temp
+*.bak
+*.backup
+*.cache
+.cache/
+*.pid
 
-# Sensitive files
-YOUR_SSH_PUBLIC_KEY.txt
-*.pem
-*.key
-id_rsa*
-id_ed25519*
+# System files
+Thumbs.db
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Hugging Face cache
+.cache/
+huggingface/
+transformers_cache/
+
+# TensorBoard
+runs/
+tensorboard/
+
+# Weights & Biases
+wandb/
+
+# Data splits (can be regenerated)
+data_splits_generated/
+fair_test_splits/
+real_test_split/
+fewshot_data/
+
+# Reports and visualizations (keep structure but ignore large files)
+reports/*.png
+reports/*.jpg
+organize*/**/*.png
+organize*/**/*.jpg
+
+# Organized directory (keep structure only)
+organized/2_data/synthetic/**/*.png
+organized/2_data/synthetic/**/*.jpg
+organized/3_training/experiments/**/*.pth
+organized/3_training/experiments/**/*.png
+organized/4_visualizations/**/*.png
+
+# Keep only README and structure files
+!organized/**/README.md
+!organized/**/*.md
+!organized/DIRECTORY_TREE.txt
